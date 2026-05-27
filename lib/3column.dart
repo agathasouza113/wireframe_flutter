@@ -51,7 +51,7 @@ class MainApp extends StatelessWidget {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: const Color.fromARGB(255, 77, 76, 76),
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
@@ -63,7 +63,7 @@ class MainApp extends StatelessWidget {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.grey,
+                            color: const Color.fromARGB(255, 53, 53, 53),
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
