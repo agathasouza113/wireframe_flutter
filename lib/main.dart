@@ -9,10 +9,36 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    //tirei o 'const antes de MaterialApp
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: Center(
-          child: Text('Hello World!'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Basic',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black
+                ),
+              ),  
+              const SizedBox(height: 10),
+              Expanded(child: Padding(
+                //Esse padding aqui é pra não colcar na tela, encima e embaixo 
+                padding: const EdgeInsetsGeometry.symmetric(horizontal: 16, vertical: 10),
+                child: Container(
+                  //Aqui é pra ele ocupar a largura inteira da tela
+                  width: double.infinity,
+                  color: Colors.grey,
+                ), 
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
