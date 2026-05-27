@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
               Text(
                 'Basic',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.black
                 ),
@@ -31,6 +31,9 @@ class MainApp extends StatelessWidget {
                 //Esse padding aqui é pra não colcar na tela, encima e embaixo 
                 padding: const EdgeInsetsGeometry.symmetric(horizontal: 16, vertical: 10),
                 child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                   //Aqui é pra ele ocupar a largura inteira da tela
                   width: double.infinity,
                   color: Colors.grey,
